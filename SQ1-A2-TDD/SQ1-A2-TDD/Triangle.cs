@@ -41,5 +41,11 @@ namespace SQ1_A2_TDD
             }
             return area;
         }
+
+        public double CalculateAngle(double One, double Two)
+        {
+            double angleThree = 0;
+            return angleThree;
+        }
     }
 }

@@ -33,5 +33,10 @@ namespace TriangleUnitTests
             Assert.AreEqual(testTriangle.CalculateArea(-9, -8), 0);
         }
 
+        [TestMethod]
+        public void AngleTestNormal()
+        {
+            Assert.AreEqual(testTriangle.CalculateAngle (30,120),40);
+        }
     }
 }
