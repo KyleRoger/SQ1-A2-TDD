@@ -36,11 +36,7 @@
             this.angleC = new System.Windows.Forms.Label();
             this.angleBtn = new System.Windows.Forms.Button();
             this.sideBtn = new System.Windows.Forms.Button();
-            this.sideAtext = new System.Windows.Forms.TextBox();
-            this.angleAtext = new System.Windows.Forms.TextBox();
             this.angleCtext = new System.Windows.Forms.TextBox();
-            this.sideBtext = new System.Windows.Forms.TextBox();
-            this.angleBtext = new System.Windows.Forms.TextBox();
             this.sideCtext = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
@@ -50,6 +46,14 @@
             this.areaBtn = new System.Windows.Forms.Button();
             this.areaLabel = new System.Windows.Forms.Label();
             this.areaTxt = new System.Windows.Forms.TextBox();
+            this.sideAnum = new System.Windows.Forms.NumericUpDown();
+            this.sideBnum = new System.Windows.Forms.NumericUpDown();
+            this.angleBnum = new System.Windows.Forms.NumericUpDown();
+            this.angleAnum = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.sideAnum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sideBnum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.angleBnum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.angleAnum)).BeginInit();
             this.SuspendLayout();
             // 
             // sideA
@@ -100,7 +104,7 @@
             // angleC
             // 
             this.angleC.AutoSize = true;
-            this.angleC.Location = new System.Drawing.Point(354, 337);
+            this.angleC.Location = new System.Drawing.Point(374, 357);
             this.angleC.Name = "angleC";
             this.angleC.Size = new System.Drawing.Size(57, 17);
             this.angleC.TabIndex = 5;
@@ -108,7 +112,7 @@
             // 
             // angleBtn
             // 
-            this.angleBtn.Location = new System.Drawing.Point(327, 269);
+            this.angleBtn.Location = new System.Drawing.Point(327, 308);
             this.angleBtn.Name = "angleBtn";
             this.angleBtn.Size = new System.Drawing.Size(133, 32);
             this.angleBtn.TabIndex = 6;
@@ -126,46 +130,20 @@
             this.sideBtn.UseVisualStyleBackColor = true;
             this.sideBtn.Click += new System.EventHandler(this.sideBtn_Click);
             // 
-            // sideAtext
-            // 
-            this.sideAtext.Location = new System.Drawing.Point(55, 63);
-            this.sideAtext.Name = "sideAtext";
-            this.sideAtext.Size = new System.Drawing.Size(100, 22);
-            this.sideAtext.TabIndex = 8;
-            // 
-            // angleAtext
-            // 
-            this.angleAtext.Location = new System.Drawing.Point(336, 102);
-            this.angleAtext.Name = "angleAtext";
-            this.angleAtext.Size = new System.Drawing.Size(105, 22);
-            this.angleAtext.TabIndex = 9;
-            // 
             // angleCtext
             // 
-            this.angleCtext.Location = new System.Drawing.Point(336, 375);
+            this.angleCtext.Location = new System.Drawing.Point(327, 386);
             this.angleCtext.Name = "angleCtext";
-            this.angleCtext.Size = new System.Drawing.Size(105, 22);
+            this.angleCtext.ReadOnly = true;
+            this.angleCtext.Size = new System.Drawing.Size(133, 22);
             this.angleCtext.TabIndex = 10;
-            // 
-            // sideBtext
-            // 
-            this.sideBtext.Location = new System.Drawing.Point(55, 118);
-            this.sideBtext.Name = "sideBtext";
-            this.sideBtext.Size = new System.Drawing.Size(100, 22);
-            this.sideBtext.TabIndex = 11;
-            // 
-            // angleBtext
-            // 
-            this.angleBtext.Location = new System.Drawing.Point(336, 209);
-            this.angleBtext.Name = "angleBtext";
-            this.angleBtext.Size = new System.Drawing.Size(105, 22);
-            this.angleBtext.TabIndex = 12;
             // 
             // sideCtext
             // 
-            this.sideCtext.Location = new System.Drawing.Point(55, 238);
+            this.sideCtext.Location = new System.Drawing.Point(34, 238);
             this.sideCtext.Name = "sideCtext";
-            this.sideCtext.Size = new System.Drawing.Size(100, 22);
+            this.sideCtext.ReadOnly = true;
+            this.sideCtext.Size = new System.Drawing.Size(139, 22);
             this.sideCtext.TabIndex = 13;
             // 
             // nameLabel
@@ -234,16 +212,58 @@
             // 
             // areaTxt
             // 
-            this.areaTxt.Location = new System.Drawing.Point(55, 386);
+            this.areaTxt.Location = new System.Drawing.Point(34, 386);
             this.areaTxt.Name = "areaTxt";
-            this.areaTxt.Size = new System.Drawing.Size(100, 22);
+            this.areaTxt.ReadOnly = true;
+            this.areaTxt.Size = new System.Drawing.Size(139, 22);
             this.areaTxt.TabIndex = 21;
+            // 
+            // sideAnum
+            // 
+            this.sideAnum.DecimalPlaces = 3;
+            this.sideAnum.Location = new System.Drawing.Point(34, 63);
+            this.sideAnum.Name = "sideAnum";
+            this.sideAnum.Size = new System.Drawing.Size(139, 22);
+            this.sideAnum.TabIndex = 22;
+            // 
+            // sideBnum
+            // 
+            this.sideBnum.DecimalPlaces = 3;
+            this.sideBnum.Location = new System.Drawing.Point(34, 118);
+            this.sideBnum.Name = "sideBnum";
+            this.sideBnum.Size = new System.Drawing.Size(139, 22);
+            this.sideBnum.TabIndex = 23;
+            // 
+            // angleBnum
+            // 
+            this.angleBnum.DecimalPlaces = 3;
+            this.angleBnum.Location = new System.Drawing.Point(327, 199);
+            this.angleBnum.Name = "angleBnum";
+            this.angleBnum.Size = new System.Drawing.Size(140, 22);
+            this.angleBnum.TabIndex = 24;
+            // 
+            // angleAnum
+            // 
+            this.angleAnum.DecimalPlaces = 3;
+            this.angleAnum.Location = new System.Drawing.Point(327, 92);
+            this.angleAnum.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.angleAnum.Name = "angleAnum";
+            this.angleAnum.Size = new System.Drawing.Size(140, 22);
+            this.angleAnum.TabIndex = 25;
             // 
             // Triangle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.angleAnum);
+            this.Controls.Add(this.angleBnum);
+            this.Controls.Add(this.sideBnum);
+            this.Controls.Add(this.sideAnum);
             this.Controls.Add(this.areaTxt);
             this.Controls.Add(this.areaLabel);
             this.Controls.Add(this.areaBtn);
@@ -253,11 +273,7 @@
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.sideCtext);
-            this.Controls.Add(this.angleBtext);
-            this.Controls.Add(this.sideBtext);
             this.Controls.Add(this.angleCtext);
-            this.Controls.Add(this.angleAtext);
-            this.Controls.Add(this.sideAtext);
             this.Controls.Add(this.sideBtn);
             this.Controls.Add(this.angleBtn);
             this.Controls.Add(this.angleC);
@@ -268,6 +284,10 @@
             this.Controls.Add(this.sideA);
             this.Name = "Triangle";
             this.Text = "Triangle";
+            ((System.ComponentModel.ISupportInitialize)(this.sideAnum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sideBnum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.angleBnum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.angleAnum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,11 +303,7 @@
         private System.Windows.Forms.Label angleC;
         private System.Windows.Forms.Button angleBtn;
         private System.Windows.Forms.Button sideBtn;
-        private System.Windows.Forms.TextBox sideAtext;
-        private System.Windows.Forms.TextBox angleAtext;
         private System.Windows.Forms.TextBox angleCtext;
-        private System.Windows.Forms.TextBox sideBtext;
-        private System.Windows.Forms.TextBox angleBtext;
         private System.Windows.Forms.TextBox sideCtext;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label dateLabel;
@@ -297,6 +313,10 @@
         private System.Windows.Forms.Button areaBtn;
         private System.Windows.Forms.Label areaLabel;
         private System.Windows.Forms.TextBox areaTxt;
+        private System.Windows.Forms.NumericUpDown sideAnum;
+        private System.Windows.Forms.NumericUpDown sideBnum;
+        private System.Windows.Forms.NumericUpDown angleBnum;
+        private System.Windows.Forms.NumericUpDown angleAnum;
     }
 }
 
