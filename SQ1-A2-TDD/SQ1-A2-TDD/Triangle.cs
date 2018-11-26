@@ -46,7 +46,10 @@ namespace SQ1_A2_TDD
         {
             double angleThree = 0;
 
-            angleThree = 180 - angleOne - angleTwo;
+            if ((angleOne + angleTwo) < 180 && (angleOne + angleTwo) > 0)
+            {
+                angleThree = 180 - angleOne - angleTwo;
+            }
             return angleThree;
         }
     }
