@@ -28,13 +28,227 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.sideA = new System.Windows.Forms.Label();
+            this.sideB = new System.Windows.Forms.Label();
+            this.sideC = new System.Windows.Forms.Label();
+            this.angleA = new System.Windows.Forms.Label();
+            this.angleB = new System.Windows.Forms.Label();
+            this.angleC = new System.Windows.Forms.Label();
+            this.angleBtn = new System.Windows.Forms.Button();
+            this.sideBtn = new System.Windows.Forms.Button();
+            this.sideAtext = new System.Windows.Forms.TextBox();
+            this.angleAtext = new System.Windows.Forms.TextBox();
+            this.angleCtext = new System.Windows.Forms.TextBox();
+            this.sideBtext = new System.Windows.Forms.TextBox();
+            this.angleBtext = new System.Windows.Forms.TextBox();
+            this.sideCtext = new System.Windows.Forms.TextBox();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.classLabel = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // sideA
+            // 
+            this.sideA.AutoSize = true;
+            this.sideA.Location = new System.Drawing.Point(65, 59);
+            this.sideA.Name = "sideA";
+            this.sideA.Size = new System.Drawing.Size(49, 17);
+            this.sideA.TabIndex = 0;
+            this.sideA.Text = "Side A";
+            // 
+            // sideB
+            // 
+            this.sideB.AutoSize = true;
+            this.sideB.Location = new System.Drawing.Point(65, 170);
+            this.sideB.Name = "sideB";
+            this.sideB.Size = new System.Drawing.Size(49, 17);
+            this.sideB.TabIndex = 1;
+            this.sideB.Text = "Side B";
+            // 
+            // sideC
+            // 
+            this.sideC.AutoSize = true;
+            this.sideC.Location = new System.Drawing.Point(65, 333);
+            this.sideC.Name = "sideC";
+            this.sideC.Size = new System.Drawing.Size(49, 17);
+            this.sideC.TabIndex = 2;
+            this.sideC.Text = "Side C";
+            // 
+            // angleA
+            // 
+            this.angleA.AutoSize = true;
+            this.angleA.Location = new System.Drawing.Point(269, 59);
+            this.angleA.Name = "angleA";
+            this.angleA.Size = new System.Drawing.Size(57, 17);
+            this.angleA.TabIndex = 3;
+            this.angleA.Text = "Angle A";
+            // 
+            // angleB
+            // 
+            this.angleB.AutoSize = true;
+            this.angleB.Location = new System.Drawing.Point(269, 170);
+            this.angleB.Name = "angleB";
+            this.angleB.Size = new System.Drawing.Size(57, 17);
+            this.angleB.TabIndex = 4;
+            this.angleB.Text = "Angle B";
+            // 
+            // angleC
+            // 
+            this.angleC.AutoSize = true;
+            this.angleC.Location = new System.Drawing.Point(598, 59);
+            this.angleC.Name = "angleC";
+            this.angleC.Size = new System.Drawing.Size(57, 17);
+            this.angleC.TabIndex = 5;
+            this.angleC.Text = "Angle C";
+            // 
+            // angleBtn
+            // 
+            this.angleBtn.Location = new System.Drawing.Point(403, 88);
+            this.angleBtn.Name = "angleBtn";
+            this.angleBtn.Size = new System.Drawing.Size(133, 32);
+            this.angleBtn.TabIndex = 6;
+            this.angleBtn.Text = "Calculate Angle";
+            this.angleBtn.UseVisualStyleBackColor = true;
+            // 
+            // sideBtn
+            // 
+            this.sideBtn.Location = new System.Drawing.Point(33, 265);
+            this.sideBtn.Name = "sideBtn";
+            this.sideBtn.Size = new System.Drawing.Size(139, 32);
+            this.sideBtn.TabIndex = 7;
+            this.sideBtn.Text = "Calculate Side";
+            this.sideBtn.UseVisualStyleBackColor = true;
+            // 
+            // sideAtext
+            // 
+            this.sideAtext.Location = new System.Drawing.Point(45, 98);
+            this.sideAtext.Name = "sideAtext";
+            this.sideAtext.Size = new System.Drawing.Size(100, 22);
+            this.sideAtext.TabIndex = 8;
+            // 
+            // angleAtext
+            // 
+            this.angleAtext.Location = new System.Drawing.Point(251, 98);
+            this.angleAtext.Name = "angleAtext";
+            this.angleAtext.Size = new System.Drawing.Size(105, 22);
+            this.angleAtext.TabIndex = 9;
+            // 
+            // angleCtext
+            // 
+            this.angleCtext.Location = new System.Drawing.Point(578, 98);
+            this.angleCtext.Name = "angleCtext";
+            this.angleCtext.Size = new System.Drawing.Size(100, 22);
+            this.angleCtext.TabIndex = 10;
+            // 
+            // sideBtext
+            // 
+            this.sideBtext.Location = new System.Drawing.Point(45, 209);
+            this.sideBtext.Name = "sideBtext";
+            this.sideBtext.Size = new System.Drawing.Size(100, 22);
+            this.sideBtext.TabIndex = 11;
+            // 
+            // angleBtext
+            // 
+            this.angleBtext.Location = new System.Drawing.Point(251, 209);
+            this.angleBtext.Name = "angleBtext";
+            this.angleBtext.Size = new System.Drawing.Size(105, 22);
+            this.angleBtext.TabIndex = 12;
+            // 
+            // sideCtext
+            // 
+            this.sideCtext.Location = new System.Drawing.Point(45, 371);
+            this.sideCtext.Name = "sideCtext";
+            this.sideCtext.Size = new System.Drawing.Size(100, 22);
+            this.sideCtext.TabIndex = 13;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(598, 209);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(87, 17);
+            this.nameLabel.TabIndex = 14;
+            this.nameLabel.Text = "Kyle Horsley";
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.Location = new System.Drawing.Point(575, 239);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(133, 17);
+            this.dateLabel.TabIndex = 15;
+            this.dateLabel.Text = "November 25, 2018";
+            // 
+            // classLabel
+            // 
+            this.classLabel.AutoSize = true;
+            this.classLabel.Location = new System.Drawing.Point(575, 273);
+            this.classLabel.Name = "classLabel";
+            this.classLabel.Size = new System.Drawing.Size(142, 17);
+            this.classLabel.TabIndex = 16;
+            this.classLabel.Text = "Software Quality One";
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Location = new System.Drawing.Point(363, 19);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(127, 17);
+            this.titleLabel.TabIndex = 17;
+            this.titleLabel.Text = "Triangle Calculator";
+            // 
+            // Triangle
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.titleLabel);
+            this.Controls.Add(this.classLabel);
+            this.Controls.Add(this.dateLabel);
+            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.sideCtext);
+            this.Controls.Add(this.angleBtext);
+            this.Controls.Add(this.sideBtext);
+            this.Controls.Add(this.angleCtext);
+            this.Controls.Add(this.angleAtext);
+            this.Controls.Add(this.sideAtext);
+            this.Controls.Add(this.sideBtn);
+            this.Controls.Add(this.angleBtn);
+            this.Controls.Add(this.angleC);
+            this.Controls.Add(this.angleB);
+            this.Controls.Add(this.angleA);
+            this.Controls.Add(this.sideC);
+            this.Controls.Add(this.sideB);
+            this.Controls.Add(this.sideA);
+            this.Name = "Triangle";
+            this.Text = "Triangle";
+            this.Load += new System.EventHandler(this.Triangle_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label sideA;
+        private System.Windows.Forms.Label sideB;
+        private System.Windows.Forms.Label sideC;
+        private System.Windows.Forms.Label angleA;
+        private System.Windows.Forms.Label angleB;
+        private System.Windows.Forms.Label angleC;
+        private System.Windows.Forms.Button angleBtn;
+        private System.Windows.Forms.Button sideBtn;
+        private System.Windows.Forms.TextBox sideAtext;
+        private System.Windows.Forms.TextBox angleAtext;
+        private System.Windows.Forms.TextBox angleCtext;
+        private System.Windows.Forms.TextBox sideBtext;
+        private System.Windows.Forms.TextBox angleBtext;
+        private System.Windows.Forms.TextBox sideCtext;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Label classLabel;
+        private System.Windows.Forms.Label titleLabel;
     }
 }
 
