@@ -26,5 +26,12 @@ namespace TriangleUnitTests
         {
             Assert.AreEqual(testTriangle.CalculateArea(8, 9), 36);
         }
+
+        [TestMethod]
+        public void AreaTestException()
+        {
+            Assert.AreEqual(testTriangle.CalculateArea(-9, -8), 0);
+        }
+
     }
 }
