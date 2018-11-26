@@ -10,8 +10,9 @@ namespace TriangleUnitTests
         Triangle testTriangle = new Triangle();
 
         [TestMethod]
-        public void TestMethod1()
+        public void HypotenuseTestNormal()
         {
+            Assert.AreEqual(testTriangle.CalculateHyp(3, 4), 5);
         }
     }
 }

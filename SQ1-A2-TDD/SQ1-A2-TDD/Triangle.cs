@@ -17,6 +17,11 @@ namespace SQ1_A2_TDD
             InitializeComponent();
         }
 
+        public double CalculateHyp(double A, double B)
+        {
+            double C = 0;
 
+            return C;
+        }
     }
 }
