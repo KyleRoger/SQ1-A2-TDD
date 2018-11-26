@@ -29,5 +29,11 @@ namespace SQ1_A2_TDD
             }
             return C;
         }
+
+        public double CalculateArea(double A, double B)
+        {
+            double area = 0;
+            return area;
+        }
     }
 }

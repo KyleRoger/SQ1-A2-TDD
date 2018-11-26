@@ -20,5 +20,11 @@ namespace TriangleUnitTests
         {
             Assert.AreEqual(testTriangle.CalculateHyp(-3, -4), 0);
         }
+
+        [TestMethod]
+        public void AreaTestNormal()
+        {
+            Assert.AreEqual(testTriangle.CalculateArea(8, 9), 36);
+        }
     }
 }
