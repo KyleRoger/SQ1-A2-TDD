@@ -52,5 +52,21 @@ namespace SQ1_A2_TDD
             }
             return angleThree;
         }
+
+        private void sideBtn_Click(object sender, EventArgs e)
+        {
+      
+           sideCtext.Text = Convert.ToString(CalculateHyp(Convert.ToDouble(sideAtext.Text), Convert.ToDouble(sideBtext.Text)));
+        }
+
+        private void areaBtn_Click(object sender, EventArgs e)
+        {
+            areaTxt.Text = Convert.ToString(CalculateArea(Convert.ToDouble(sideAtext.Text), Convert.ToDouble(sideBtext.Text)));
+        }
+
+        private void angleBtn_Click(object sender, EventArgs e)
+        {
+            angleCtext.Text = Convert.ToString(CalculateAngle(Convert.ToDouble(angleAtext.Text), Convert.ToDouble(angleBtext.Text)));
+        }
     }
 }
