@@ -33,6 +33,7 @@ namespace SQ1_A2_TDD
         public double CalculateArea(double A, double B)
         {
             double area = 0;
+            area = (0.5 * (A * B));
             return area;
         }
     }
