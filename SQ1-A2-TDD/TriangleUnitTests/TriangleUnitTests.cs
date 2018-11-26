@@ -14,5 +14,11 @@ namespace TriangleUnitTests
         {
             Assert.AreEqual(testTriangle.CalculateHyp(3, 4), 5);
         }
+
+        [TestMethod]
+        public void HypotenuseTestException()
+        {
+            Assert.AreEqual(testTriangle.CalculateHyp(-3, -4), 0);
+        }
     }
 }
