@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQ1-A2-TDD", "SQ1-A2-TDD\SQ1-A2-TDD.csproj", "{36BC66C1-67BD-4762-A9E1-00FB9A5D6DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleUnitTests", "TriangleUnitTests\TriangleUnitTests.csproj", "{F5628A3C-9583-4E19-B6DD-DFFB33CD6F04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36BC66C1-67BD-4762-A9E1-00FB9A5D6DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36BC66C1-67BD-4762-A9E1-00FB9A5D6DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36BC66C1-67BD-4762-A9E1-00FB9A5D6DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36BC66C1-67BD-4762-A9E1-00FB9A5D6DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5628A3C-9583-4E19-B6DD-DFFB33CD6F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5628A3C-9583-4E19-B6DD-DFFB33CD6F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5628A3C-9583-4E19-B6DD-DFFB33CD6F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5628A3C-9583-4E19-B6DD-DFFB33CD6F04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAD56114-BE99-4040-836B-1A6D18C06807}
+	EndGlobalSection
+EndGlobal
