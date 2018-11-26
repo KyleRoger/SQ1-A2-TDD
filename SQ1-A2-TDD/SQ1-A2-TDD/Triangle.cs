@@ -22,7 +22,7 @@ namespace SQ1_A2_TDD
             double C = 0;
 
             //If either side A or B is negative, Just set C to zero.
-            if (A > 0 || B > 0)
+            if (A > 0 && B > 0)
             {
                 // (A^2 + B^2) = C^2
                 C = Math.Sqrt(Math.Pow(A, 2) + Math.Pow(B, 2));
@@ -33,7 +33,12 @@ namespace SQ1_A2_TDD
         public double CalculateArea(double A, double B)
         {
             double area = 0;
-            area = (0.5 * (A * B));
+
+            if (A > 0 && B > 0)
+            {
+                //area == 1/2 *AB
+                area = (0.5 * (A * B));
+            }
             return area;
         }
     }
